@@ -31,7 +31,7 @@ MovieApp is a web application designed to provide users with an intuitive and en
     ```
 2. Navigate to the project directory:
     ```bash
-    cd movieApp
+    cd Movie-Site-REACT
     ```
 3. Install dependencies:
     ```bash
