@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const MovieCard = ({movie: 
-    {title ,vote_average,poster_path, release_date , original_language}}) => {
+    {title ,vote_average,poster_path, release_date , original_language,genre_ids}}) => {
   return (
     <div className='movie-card'>
         <p className='text-white'>{title}</p>
@@ -23,6 +23,7 @@ export const MovieCard = ({movie:
             <p className='lang'>{original_language}</p>
             <span>•</span>
             <p className='year'>{new Date(release_date).getFullYear()}</p>
+
             </div>
 
         
