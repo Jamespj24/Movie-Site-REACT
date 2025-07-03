@@ -1,8 +1,12 @@
 import { Client, Databases, ID, Query } from 'appwrite'
 
-const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID;
-const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
-const COLLECTION_ID = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
+// const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID;
+// const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
+// const COLLECTION_ID = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
+
+const PROJECT_ID = '67fa18660036d6195877';
+const DATABASE_ID = '67fa196a0035ed7c3d2d';
+const COLLECTION_ID = '67fa19a1003b2466cd49';
 
 const client = new Client()
   .setEndpoint('https://fra.cloud.appwrite.io/v1')

@@ -7,7 +7,8 @@ import { getTrendingMovies, updateSearchCount } from './appwrite.js'
 
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 
-const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+// const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwOGQwOGFlZjY5NGU1ODBjMjBmYzI0ZjZiYTMyZGE3ZSIsIm5iZiI6MTc1MTU0OTYwOC4xMDA5OTk4LCJzdWIiOiI2ODY2ODZhODViMjQwZjBjZmVjMTE3ZGQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.1pxBmZ25VZ4lTooKtvKIutKyUzwWTQDuK0XvlfOjJWU'; // <-- hardcoded API key
 
 const API_OPTIONS = {
   method: 'GET',
@@ -91,7 +92,7 @@ const App = () => {
 
       <div className="wrapper">
         <header>
-          <img src="./hero.png" alt="Hero Banner" />
+          <img src="/Movie-Site-REACT/hero.png" alt="Hero Banner" />
           <h1>Find <span className="text-gradient">Movies</span> You'll Enjoy Without the Hassle</h1>
 
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
