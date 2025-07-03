@@ -97,23 +97,9 @@ const App = () => {
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
 
-        {trendingMovies.length > 0 && (
-          <section className="trending">
-            <h2>Trending Movies</h2>
-
-            <ul>
-              {trendingMovies.map((movie, index) => (
-                <li key={movie.$id}>
-                  <p>{index + 1}</p>
-                  <img src={movie.poster_url} alt={movie.title} />
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        <section className="all-movies">
-          <h2>All Movies</h2>
+        {/* Add margin-top to move Trending Movies down */}
+        <section className="all-movies" style={{ marginTop: '4rem' }}>
+          <h2>Trending Movies</h2>
 
           {isLoading ? (
             <Spinner />
